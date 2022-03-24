@@ -32,13 +32,13 @@ public class RegistrationTests extends TestBase {
         // $("react-datepicker__day--024").click();
         $("#subjectsInput").setValue("English").pressEnter();
         $(byText("Music")).click();
-        $("#uploadPicture").uploadFile(new File("./src/test/resources/mem1.jpg"));
+        // $("#uploadPicture").uploadFile(new File("./src/test/resources/mem1.jpg"));
         // $("#uploadPicture").uploadFromClasspath(new File("mem1.jpg"));
         //   File imgfile = new File("./src/test/resources/mem1.jpg");
         $("#currentAddress").setValue("Rome");
         $("#state").scrollTo().click();
-        //  $("#react-select-3-input").setValue("Uttar Pradesh").pressEnter();
-        $("#stateCity-wrapper").$(byText("Uttar Pradesh")).click();
+        $("#react-select-3-input").setValue("Uttar Pradesh").pressEnter();
+        // $("#stateCity-wrapper").$(byText("Uttar Pradesh")).click();
         //   $("#react-select-4-input").setValue("Agra").pressEnter();
         $("#city").scrollTo().click();
         $("#stateCity-wrapper").$(byText("Agra")).click();
@@ -61,8 +61,8 @@ public class RegistrationTests extends TestBase {
                 .parent().shouldHave(text("English"));
         $(".table-responsive").$(byText("Hobbies"))
                 .parent().shouldHave(text("Music"));
-        $(".table-responsive").$(byText("Picture"))
-                .parent().shouldHave(text("mem1.jpg"));
+        //  $(".table-responsive").$(byText("Picture"))
+        // .parent().shouldHave(text("mem1.jpg"));
         $(".table-responsive").$(byText("Address"))
                 .parent().shouldHave(text("Rome"));
         $(".table-responsive").$(byText("State and City"))
