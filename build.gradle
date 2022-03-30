@@ -64,3 +64,4 @@ task smoke_test(type: Test) {
         //excludeTags "" исключить тег
     }
 }
+
