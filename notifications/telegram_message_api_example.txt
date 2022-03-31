@@ -1,5 +1,6 @@
 BOT_TOKEN 5280842841:AAEO1kQblxU-N52JqmMnWdShnLHydxvKwkY
 CHAT_ID -1001760578085
+PERSONAL_ID 709517976
 
 //Command in many lines (\ as separator)
 curl -X POST \
